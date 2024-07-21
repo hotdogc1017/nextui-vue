@@ -1,0 +1,48 @@
+{
+  "name": "nextui-vue",
+  "type": "module",
+  "version": "0.0.1-alpha.0.0.1",
+  "author": {
+    "name": "hotdog",
+    "email": "hotdogc1017@gmail.com",
+    "url": "https://x.com/hotdog__1017"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hotdogc1017/nextui-vue"
+  },
+  "bugs": {
+    "url": "https://github.com/hotdogc1017/nextui-vue/issues"
+  },
+  "keywords": [
+    "nextui",
+    "vue",
+    "ui",
+    "ui framework",
+    "tailwindcss"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "@antfu/eslint-config": "^2.23.0",
+    "@nextui-org/theme": "^2.2.9",
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.23.0",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "autoprefixer": "^10.4.19",
+    "eslint": "9.5.0",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "vite": "^5.3.4",
+    "vitepress": "^1.3.1"
+  }
+}
