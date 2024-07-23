@@ -1,25 +1,28 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import type { ButtonVariantProps } from '@nextui-org/theme'
 import { button } from '@nextui-org/theme'
 import type { NVButtonProps } from './types'
 
 const props = defineProps<NVButtonProps>()
 
-const config: ButtonVariantProps = {
+const hover = ref(true)
+const click = ref(true)
+
+const className = computed(() => {
+  const config: ButtonVariantProps = {
+  variant: props.type,
   size: 'sm',
   color: 'primary',
   radius: 'sm',
   fullWidth: false,
-  isDisabled: false,
+  isDisabled: props.disabled,
   isInGroup: false,
   disableAnimation: false,
   isIconOnly: false,
 }
-const className = button(config)
-
-const hover = ref(true)
-const click = ref(true)
+  return button(config);
+})
 
 function focus() {
   click.value = true

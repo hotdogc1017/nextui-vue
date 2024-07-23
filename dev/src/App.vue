@@ -4,7 +4,7 @@ import NVButton from './components/button/index.vue'
 
 <template>
   <div class="h-svh flex">
-    <NVButton style="margin: auto;">
+    <NVButton type="flat" :disabled="true" style="margin: auto;">
       Test
     </NVButton>
   </div>

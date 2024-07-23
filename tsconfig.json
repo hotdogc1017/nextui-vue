@@ -11,9 +11,10 @@
     "sourceMap": true,
     "esModuleInterop": true,
     "isolatedModules": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "rootDir": "."
   },
   "references": [{ "path": "./tsconfig.node.json" }],
-  "include": ["/dev"],
+  "include": ["dev/src/**/*.{js,ts,jsx,tsx,d.ts,vue}", "packages/**/*.{js,ts,jsx,tsx,d.ts,vue}"],
   "exclude": ["**/node_modules", "**/dist"]
 }

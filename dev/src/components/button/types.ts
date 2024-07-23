@@ -1,3 +1,7 @@
+import type {ButtonVariantProps} from "@nextui-org/theme"
+
 export interface NVButtonProps {
-  disabled?: boolean
+  disabled?: boolean,
+  size?: ButtonVariantProps["size"],
+  type?: ButtonVariantProps["variant"],
 }
