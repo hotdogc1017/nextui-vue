@@ -22,5 +22,9 @@
     "ui framework",
     "tailwindcss"
   ],
-  "main": "./index.ts"
+  "exports": {
+    ".": "./index.ts",
+    "./*/index.*": "./*/index.*",
+    "./*/src/*.*": "./*/src/*.*"
+  }
 }
