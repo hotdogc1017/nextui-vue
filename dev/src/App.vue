@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import NVButton from './components/button/index.vue'
+import { NVButton } from 'nextui-vue'
 </script>
 
 <template>
   <div class="h-svh flex">
-    <NVButton type="flat" :disabled="true" style="margin: auto;">
+    <NVButton type="flat" :disabled="false" style="margin: auto;">
       Test
     </NVButton>
   </div>

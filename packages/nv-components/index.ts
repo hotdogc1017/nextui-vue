@@ -1,5 +1,7 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import button from "./button/index"
 
-createApp(App).mount('#app')
+export const NVButton = button
+
+export default {
+    NVButton
+}

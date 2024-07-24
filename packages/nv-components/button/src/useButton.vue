@@ -2,9 +2,9 @@
 import { ref, computed } from 'vue'
 import type { ButtonVariantProps } from '@nextui-org/theme'
 import { button } from '@nextui-org/theme'
-import type { NVButtonProps } from './types'
+import type { ButtonProps } from './button'
 
-const props = defineProps<NVButtonProps>()
+const props = defineProps<ButtonProps>()
 
 const hover = ref(true)
 const click = ref(true)
@@ -21,6 +21,7 @@ const className = computed(() => {
   disableAnimation: false,
   isIconOnly: false,
 }
+
   return button(config);
 })
 
