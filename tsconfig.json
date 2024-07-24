@@ -4,6 +4,7 @@
     "jsx": "preserve",
     "lib": ["esnext", "dom"],
     "useDefineForClassFields": true,
+    "rootDir": ".",
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -11,8 +12,7 @@
     "sourceMap": true,
     "esModuleInterop": true,
     "isolatedModules": true,
-    "skipLibCheck": true,
-    "rootDir": "."
+    "skipLibCheck": true
   },
   "references": [{ "path": "./tsconfig.node.json" }],
   "include": ["dev/src/**/*.{js,ts,jsx,tsx,d.ts,vue}", "packages/**/*.{js,ts,jsx,tsx,d.ts,vue}"],
