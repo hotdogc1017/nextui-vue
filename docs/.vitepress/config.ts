@@ -2,13 +2,37 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  title: "NextUI Vue",
+  description: "基于NextUI Theme构建的Vue组件库",
+  head: [
+    ['link', { rel: 'icon', href: '/logo.png' }]
+  ],
+
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    logo: "/logo.png",
+    search: {
+      provider: "local"
+    },
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '首页', link: '/' },
+      { text: '组件', link: '/markdown-examples' },
+      {
+        text: "相关链接",
+        items: [
+          {
+            text: "NextUI",
+            link: "https://nextui.org/",
+          },
+          {
+            text: "Radix Vue",
+            link: "https://www.radix-vue.com/",
+          },
+          {
+            text: "IKUNUI",
+            link: "https://laine001.github.io/ikun-ui/"
+          }
+        ]
+      }
     ],
 
     sidebar: [
@@ -22,7 +46,12 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+      { icon: 'github', link: 'https://github.com/hotdogc1017/nextui-vue' }
+    ],
+
+    footer: {
+      message: 'MIT Licensed',
+      copyright: '©hotdogc1017',
+    },
   }
 })
