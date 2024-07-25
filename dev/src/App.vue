@@ -1,12 +1,40 @@
 <script lang="ts" setup>
-import { NVButton } from 'nextui-vue'
+import { NVAccordion, NVAccordionItem, NVButton } from 'nextui-vue'
+
+const accordionItems = [
+  {
+    value: '第一项',
+    title: '标题1',
+    content: '内容内容内容内容内容内容内容',
+  },
+  {
+    value: '第二项',
+    title: '标题2',
+    content: '内容内容内容内容内容内容内容',
+  },
+  {
+    value: '第三项',
+    title: '标题3',
+    content: '内容内容内容内容内容内容内容',
+  },
+]
 </script>
 
 <template>
   <div class="h-svh flex">
-    <NVButton type="flat" :disabled="false" style="margin: auto;">
-      Test
-    </NVButton>
+    <div class="m-auto">
+      <NVButton type="flat" :disabled="false">
+        Test
+      </NVButton>
+
+      <NVAccordion>
+        <template v-for="(item, index) in accordionItems" :key="index">
+          <NVAccordionItem v-bind="item">
+            <span>{{ item.content }}</span>
+          </NVAccordionItem>
+        </template>
+      </NVAccordion>
+    </div>
   </div>
 </template>
 
