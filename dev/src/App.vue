@@ -22,10 +22,10 @@ const accordionItems = [
 
 <template>
   <div class="h-svh flex">
-    <div class="m-auto">
-      <NVButton type="flat" :disabled="false">
+    <div class="m-auto w-[500px] h-[500px]">
+      <!-- <NVButton type="flat" :disabled="false">
         Test
-      </NVButton>
+      </NVButton> -->
 
       <NVAccordion>
         <template v-for="(item, index) in accordionItems" :key="index">

@@ -10,11 +10,11 @@ export interface AccordionItemStyleProps extends AccordionItemVariantProps {
 }
 
 export interface AccordionProps extends RadixAccordionProps {
-  ui: AccordionStyleProps
+  ui?: AccordionStyleProps
 }
 
 export interface AccordionItemProps extends RadixAccordionItemProps {
   title: string
   content: string
-  ui: AccordionItemStyleProps
+  ui?: AccordionItemStyleProps
 }
