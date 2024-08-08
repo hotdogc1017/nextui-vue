@@ -3,10 +3,17 @@ import { nextui } from '@nextui-org/theme'
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './dev/src/**/*.{js,ts,jsx,tsx,vue}',
-     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"],
+  mode: 'jit',
+  content: ['./index.html', './dev/src/**/*.{js,ts,jsx,tsx,vue}', './packages/nv-components/**/*.*', './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        fadeIn: {
+          from: { height: 0, opacity: 0 },
+          to: { height: 'var(--radix-accordion-content-height)', opacity: 1 },
+        },
+      },
+    },
   },
   darkMode: 'class',
   plugins: [nextui()],
