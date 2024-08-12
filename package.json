@@ -33,7 +33,6 @@
   "dependencies": {
     "@antfu/eslint-config": "^2.23.0",
     "@nextui-org/theme": "^2.2.9",
-    "@oku-ui/motion": "^0.3.4",
     "radix-vue": "^1.9.2",
     "vue": "^3.4.31"
   },
