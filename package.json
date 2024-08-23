@@ -2,26 +2,7 @@
   "name": "nextui-vue",
   "type": "module",
   "version": "0.0.1-alpha.0.0.1",
-  "author": {
-    "name": "hotdog",
-    "email": "hotdogc1017@gmail.com",
-    "url": "https://x.com/hotdog__1017"
-  },
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hotdogc1017/nextui-vue"
-  },
-  "bugs": {
-    "url": "https://github.com/hotdogc1017/nextui-vue/issues"
-  },
-  "keywords": [
-    "nextui",
-    "vue",
-    "ui",
-    "ui framework",
-    "tailwindcss"
-  ],
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
