@@ -28,7 +28,10 @@ const accordionItems = [
       </NVButton> -->
 
       <NVAccordion>
-        <template v-for="(item, index) in accordionItems" :key="index">
+        <template
+          v-for="(item, index) in accordionItems"
+          :key="index"
+        >
           <NVAccordionItem v-bind="item">
             <span>{{ item.content }}</span>
           </NVAccordionItem>

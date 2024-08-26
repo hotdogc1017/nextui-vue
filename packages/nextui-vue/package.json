@@ -5,7 +5,7 @@
   "author": {
     "name": "hotdog",
     "email": "hotdogc1017@gmail.com",
-    "url": "https://x.com/hotdog__1017"
+    "url": "https://github.com/hotdogc1017"
   },
   "license": "ISC",
   "repository": {
@@ -30,5 +30,8 @@
     "motion": "^10.18.0",
     "radix-vue": "^1.9.2",
     "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@vue/tsconfig": "^0.5.1"
   }
 }

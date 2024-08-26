@@ -1,5 +1,5 @@
-import button from './button/index'
-import accordion from './accordion/index'
+import button from './button'
+import accordion from './accordion'
 
 export const NVButton = button
 

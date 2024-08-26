@@ -1,0 +1,31 @@
+{
+  "name": "nextui-vue-playground",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "NextUI Vue Playground",
+  "author": {
+    "name": "hotdog",
+    "email": "hotdogc1017@gmail.com",
+    "url": "https://x.com/hotdog__1017"
+  },
+  "license": "MIT",
+  "main": "main.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "nextui-vue": "link:../packages/nextui-vue",
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vue/tsconfig": "^0.5.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "vite": "^5.3.4"
+  }
+}

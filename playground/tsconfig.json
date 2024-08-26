@@ -1,4 +1,5 @@
 {
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
   "compilerOptions": {
     "target": "esnext",
     "jsx": "preserve",
@@ -15,6 +16,6 @@
     "skipLibCheck": true
   },
   "references": [{ "path": "./tsconfig.node.json" }],
-  "include": ["dev/src/**/*.{js,ts,jsx,tsx,d.ts,vue}", "packages/**/*.{js,ts,jsx,tsx,d.ts,vue}"],
+  "include": ["src/**/*", "src/**/*.vue"],
   "exclude": ["**/node_modules", "**/dist"]
 }

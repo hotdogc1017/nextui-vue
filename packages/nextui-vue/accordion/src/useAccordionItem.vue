@@ -1,7 +1,13 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 import { accordionItem } from '@nextui-org/theme'
-import { AccordionContent, AccordionHeader, AccordionTrigger, AccordionItem as RadixAccordionItem } from 'radix-vue'
+import {
+  AccordionContent,
+  AccordionHeader,
+  AccordionTrigger,
+  AccordionItem as RadixAccordionItem,
+} from 'radix-vue'
+import { animate } from 'motion'
 import type { AccordionItemProps, AccordionItemStyleProps } from './accordion'
 
 const props = defineProps<AccordionItemProps>()
@@ -20,17 +26,29 @@ const className = computed(() => {
     :value="props.value"
   >
     <template #default="{ open }">
-      <AccordionHeader :class="className.heading()" :data-open="open">
-        <AccordionTrigger :data-open="open" :class="className.trigger()">
+      <AccordionHeader
+        :class="className.heading()"
+        :data-open="open"
+      >
+        <AccordionTrigger
+          :data-open="open"
+          :class="className.trigger()"
+        >
           <div :class="className.titleWrapper()">
             <span :class="className.title()">{{ props.title }}</span>
           </div>
 
-          <span :data-open="open" :class="className.indicator({ disableAnimation: false })">?</span>
+          <span
+            :data-open="open"
+            :class="className.indicator({ disableAnimation: false })"
+          >?</span>
         </AccordionTrigger>
       </AccordionHeader>
 
-      <AccordionContent class="data-[state=open]:animate-[fade-in_200ms_ease-out] data-[state=closed]:animate-[fade-out_200ms_ease-out]">
+      <AccordionContent
+        id="content"
+        force-mound
+      >
         <div :class="className.content()">
           <slot />
         </div>

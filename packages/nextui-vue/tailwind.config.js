@@ -1,10 +1,9 @@
 import { nextui } from '@nextui-org/theme'
-// const { nextui } = require("@nextui-org/theme");
 
 /** @type {import('tailwindcss').Config} */
 export default {
   mode: 'jit',
-  content: ['./index.html', './dev/src/**/*.{js,ts,jsx,tsx,vue}', './packages/nv-components/**/*.*', './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'],
+  content: ['./**/*.{js,ts,vue}', './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       keyframes: {
